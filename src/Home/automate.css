@@ -1,0 +1,93 @@
+.automate-main{
+    margin: 0 11.1111%;
+    padding: 70px 0;
+    text-align: center;
+}
+.automate-title h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+.automate-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+    margin: 1.25rem auto 0px;
+    text-align: center;
+    max-width: 510px;
+}
+
+.horizontal-border {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+    width: 2px;
+    height: 106px;
+    margin-bottom: 6px;
+    margin: 30px auto 0;
+}
+.green-tick{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 10px;
+    margin-bottom: 1.25rem;
+    background-color: rgb(102, 191, 60);
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 5px auto;
+    color: white;
+}
+.green-tick svg{
+    fill: rgb(255, 255, 255);
+    width: 24px;
+    height: 24px;
+}
+.automate-subtitle{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0.70rem;
+}
+.automate-text-blue{
+    color: rgb(2, 156, 253);
+    padding: 20px 0;
+    transition: all ease 150ms;
+    cursor: pointer;
+}
+.automate-text-blue:hover{
+    transform: translateY(-2px);
+}
+.automate-text-blue svg{
+    fill: rgb(2, 156, 253);
+    height: 0.65em;
+    width: 0.65em;
+    margin-right: 0px;
+    margin-left: 0.25em;
+    bottom: auto;
+    vertical-align: inherit;
+}
+.calendar-img{
+    padding: 20px 0;
+    width: fit-content;
+    margin:  0 auto;
+    position: relative;
+}
+.calendar-img img{
+    width: 80%;
+}
+.calendar-img svg{
+    position: absolute;
+    top: 2%;
+    right: 6.5% ;
+}
+

@@ -1,0 +1,160 @@
+.automate-img {
+    margin: 0 auto;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    aspect-ratio: 1/1;
+    transition: all ease-in-out .5s;
+    margin: 20px;
+    position: relative;
+}
+
+.automate-img img {
+    border-radius: 5%;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.automate-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-left: -15px;
+}
+
+
+
+.slick-center .automate-img {
+    transform: scale(1.26);
+
+}
+
+.scanner-1 {
+    border-radius: 1rem;
+    position: absolute;
+    background: rgba(255, 68, 0, 0.8);
+    width: 0px;
+    height: 3px;
+    top: 16px;
+    left: 0px;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    box-shadow: 0px 0px 8px 0px rgba(255, 68, 0, 0.8);
+    border-radius: 100px;
+
+}
+
+.scanner-2 {
+    border-radius: 1rem;
+    position: absolute;
+    background: rgba(255, 68, 0, 0.8);
+    width: 3px;
+    height: 0;
+    top: 0px;
+    left: 18px;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    box-shadow: 0px 0px 0px 0px rgba(255, 68, 0, 1);
+    border-radius: 100px;
+}
+
+.slick-center .scanner-2 {
+    animation: scaner-animation-2;
+    animation-duration: .9s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes scaner-animation-2 {
+    0% {
+        height: 00px;
+    }
+
+    49% {
+        height: 210px;
+    }
+
+    50% {
+
+        opacity: 1;
+        left: 15px;
+        visibility: visible;
+        height: 210px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 190px;
+        height: 210px;
+    }
+
+}
+
+.slick-center .scanner-1 {
+    animation: scaner-animation-1;
+    animation-duration: .9s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+}
+
+@keyframes scaner-animation-1 {
+    0% {
+        width: 0;
+    }
+
+    49% {
+        width: 210px;
+    }
+
+    50% {
+
+        opacity: 1;
+        top: 15px;
+        visibility: visible;
+        width: 210px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 190px;
+        width: 210px;
+    }
+
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .slick-list {
+        width: 100%;
+        margin: auto;
+    }
+
+    .slick-track {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 80px;
+        height: 140px;
+    }
+
+    .automate-img img {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .automate-img {
+        width: 180px;
+        height: 180px;
+    }
+
+}

@@ -1,0 +1,122 @@
+.navigation-black {
+    position: sticky;
+    top: 0;
+    padding: 20px 100px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px -1px 0px 0px inset;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.nav-black-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    width: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    z-index: 20;
+
+}
+
+.nav-black-left {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-black-item {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 6px 8px
+}
+
+
+.nav-black-right {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.nav-black-right-item {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-left: 25px;
+    border-radius: 30px;
+    font-size: 11px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.nav-black-right-item svg {
+    height: 12px;
+    margin-right: 6px;
+    width: 12px;
+    fill: #fff !important;
+}
+
+.nav-black-right-item button {
+    text-transform: capitalize;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-blue {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    background: #029CFD;
+    color: #FFFFFF;
+
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .navigation-black {
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+    }
+
+    .nav-black-right-item {
+        display: none;
+    }
+
+    .btn-blue {
+        display: block;
+    }
+
+    .nav-black-item {
+        display: none;
+    }
+
+    .phone-item {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navigation-black{
+        padding: 20px 0;
+    }
+    .nav-black-left {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .tab-none{
+        display: none;
+    }
+    .nav-black-right {
+        width: 30%;
+    }
+}

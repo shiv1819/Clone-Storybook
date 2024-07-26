@@ -1,0 +1,36 @@
+.home-texture {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    background-image: url(./images/bg.jpeg);
+    background-size: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.home-main{
+    background-color: rgb(14, 12, 44);
+}
+
+body{
+    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+.border-1{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.share-hidden{
+    overflow: hidden;
+}
+.slider{
+    overflow: clip;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    
+    .hero-main{
+        margin: 0 !important;
+        padding: 20px;
+    }
+}

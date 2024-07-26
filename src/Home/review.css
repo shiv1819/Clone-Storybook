@@ -1,0 +1,106 @@
+.review-main {
+    padding: 50px 0;
+    margin: 0 11.1111%;
+}
+
+.date-img {
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    left: -15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.date-img img {
+    width: 30%;
+    object-fit: contain;
+}
+
+.comment-main {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    left: 25%;
+}
+
+.comment-main img {
+    width: 30%;
+    height: 100%;
+    margin: 5px 0;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 2px) drop-shadow(rgba(0, 0, 0, 0.1) 0px 0px 15px);
+}
+
+.purple {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 10px;
+    margin-bottom: 1.25rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 5px auto;
+    color: white;
+    background: linear-gradient(rgb(207, 96, 255) 0%, rgb(175, 68, 255) 100%);
+}
+
+.purple svg {
+    fill: #fff;
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+}
+.check-img{
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsla(203, 50%, 30%, 0.15);
+    background: #FFFFFF;
+    box-shadow: 0px 8.808px 50px 0px rgba(133, 191, 60, 0.3), 0px 6.406px 18.417px 0px rgba(102, 191, 60, 0.1);
+    border-color: #66BF3C;
+    width: 35%;
+    margin: 50px auto;
+}
+.check-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .review-main {
+        padding: 50px 20px;
+        margin: 0;
+        width: 100%;
+    }
+    .date-img img {
+        width: 86%;
+        object-fit: contain;
+    }
+    .date-img {
+        padding:0 20px;
+    }
+    .comment-main img {
+        width: 100%;
+    }
+    .comment-main{
+        width: 70%;
+        top: 47%;
+        left: 45%;
+    }
+    .check-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
